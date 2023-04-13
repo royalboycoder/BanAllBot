@@ -1,0 +1,50 @@
+
+{
+    "name": "A Group Destroyer !!!",
+    "description": "Group And Channel's On Mah Dick Ever !!!",
+    "repository": "https://github.com/KaalOS/BanAllBot",
+    "logo": "https://telegra.ph/file/ba38ba16fdf2f6e45fa4c.png",
+    "keywords": [
+        "python",
+        "telegram"
+    ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+     },
+       "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+    "env": {
+        "TOKEN": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get from https://my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from https://my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "GET USER ID FROM ROSE BOT.",
+            "value": "",
+            "required": false
+        }
+    }
+}
