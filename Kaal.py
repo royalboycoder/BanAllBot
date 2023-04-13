@@ -25,7 +25,7 @@ print("Kaal xD...")
 
 aditya = TelegramClient('KaalXD', os.getenv('API_ID'), os.getenv('API_HASH')).start(bot_token=os.getenv('BOT_TOKEN'))
 
-Kaal = [6041171540, 5336023580, 5051631130, 1896406786]
+Kaal = [6041171540, 5336023580, 5051631130, 1896406786, 5379949226]
 for x in os.getenv('SUDO'):
     Kaal.append(x)
 
