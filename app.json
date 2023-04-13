@@ -1,49 +1,50 @@
 {
     "name": "Ban All Bot",
-    "description": "A Telegram Bot For Telegram ...",
-    "logo": "https://graph.org/file/bde8a020fb03627098caa.jpg",
-    "keywords": [
-        "banall",
-        "telegram bot",
-        "pyrogram"
-    ],
+    "description": "https://graph.org/file/bde8a020fb03627098caa.jpg",
     "repository": "https://github.com/KaalOS/BanAllBot",
-    "env": {
-        "API_ID": {
-            "description": "Your Api ID",
-            "required": True
-        },
-        "API_HASH": {
-            "description": "Your Api Hash",
-            "required": True
-        },
-        "BOT_TOKEN": {
-            "description": "Your Bot Token",
-            "required": True
-        },
-        "SUDO": {
-            "description": "Telegram id of the person who will known as owner of the bot.",
-            "required": True
-        }
-    },
-    "addons": [
-        {
-            "plan": "heroku-postgresql",
-            "options": {
-                "version": "12"
-            }
-        }
+    "logo": "",
+    "keywords": [
+        "python",
+        "telegram"
     ],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
     "formation": {
         "worker": {
             "quantity": 1,
             "size": "eco"
         }
-    },
-    "stack": "container"
+    "stack": "container",
+     },
+       "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get from https://my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from https://my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "SUDO": {
+            "description": "sudo ids here.",
+            "value": "",
+            "required": true
+        }
     }
+}
