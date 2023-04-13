@@ -27,13 +27,13 @@
         }
     },
     "addons": [
-    {
-         "options": {
+        {
+        "plan": "heroku-postgresql",
+        "options": {
             "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      },
-],
+            }
+        }
+    ],
     "buildpacks": [
         {
             "url": "heroku/python"
