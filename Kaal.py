@@ -81,7 +81,7 @@ print("Lᴏᴀᴅɪɴɢ Lᴇᴀᴠᴇ...")
 
 @aditya.on(events.NewMessage(pattern="^!leave"))
 async def _(e):
-      if e.sender_id in SUDO:
+      if e.sender_id in Kaal:
         userchat = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = userchat[0]
@@ -108,7 +108,7 @@ print("Lᴏᴀᴅɪɴɢ Rᴇsᴛᴀʀᴛ...")
 
 @aditya.on(events.NewMessage(pattern="^!restart"))
 async def restart(e):
-      if e.sender_id in SUDO:
+      if e.sender_id in Kaal:
         text = "__Rᴇsᴛᴀʀᴛɪɴɢ__ , Tɪᴍᴇ ɪᴢᴢ ᴜᴘ !!"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
